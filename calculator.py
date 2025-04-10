@@ -4,9 +4,15 @@ calculator.py
 
 One function per operation, in order.
 """
-a = 10
-b = 1
 import math
+def square_root(a):
+    try:
+        return math.sqrt(a)
+    except ValueError:
+        if a<0:
+            return 'value error'
+def hypotenuse(a, b):
+    return math.hypot(a, b)
 def add(a, b): 
     return (a+b)
 def subtract(a,b):
@@ -28,3 +34,5 @@ def logarithm(a,b):
         return 'logarithm failed'
 def exponent(a,b):
     return a**b
+
+print(square_root(a))
