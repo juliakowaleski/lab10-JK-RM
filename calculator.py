@@ -14,7 +14,7 @@ def mul(a, b):
     return a * b
 def div(a, b):
     try:
-        return b / a
+        return b/a
     except ZeroDivisionError:
         return "Division by zero"
 
@@ -34,3 +34,7 @@ def square_root(a):
             return 'value error'
 def hypotenuse(a, b):
     return math.hypot(a, b)
+
+
+
+
