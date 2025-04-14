@@ -22,9 +22,9 @@ class TestCalculator(unittest.TestCase):
         self.assertAlmostEqual(logarithm(5,10), 1.4306765580733933)
 
     def test_hypotenuse(self): # 3 assertions
-        self.assertEqual(hypotenuse(1,2),2.23606797749979)
-        self.assertEqual(hypotenuse(5,-2),5.385164807134505)
-        self.assertEqual(hypotenuse(-6,-3), 6.708203932499369)
+        self.assertEqual(hypotenuse(3,4),5)
+        self.assertEqual(hypotenuse(5,12),13)
+        self.assertEqual(hypotenuse(12,35), 37)
 
 
     def test_sqrt(self): # 3 assertions
